@@ -7,7 +7,9 @@ module.exports = defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         deitlaProducts: resolve(__dirname, 'deital.html'),
-        products: resolve(__dirname, 'products.html')
+        products: resolve(__dirname, 'products.html'),
+        login: resolve(__dirname, 'login.html'),
+        register: resolve(__dirname, 'register.html'),
       }
     }
   }
