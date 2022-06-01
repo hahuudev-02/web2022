@@ -41,7 +41,7 @@ const products = [
         img: "https://picsum.photos/500/250",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 40,
-        description: "white",
+        description: "snack",
     },
 ];
 
@@ -61,7 +61,7 @@ const htmls = products.map((product) =>
 function render(elementId, htmls) {
     const element = document.getElementById(elementId)
     if(element) {
-        app.innerHTML = htmls
+        element.innerHTML = htmls
     }
 }
 
