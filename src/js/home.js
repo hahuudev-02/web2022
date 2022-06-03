@@ -1,10 +1,13 @@
 import "../css/home.css";
 import Render from "./render";
+import img from '../img/image26.png'
+
+console.log(img);
 
 const products = [
     {
         id: 1,
-        img: ".src/img/image26.png",
+        img: img,
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description: "snack",
