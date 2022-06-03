@@ -18,7 +18,7 @@ const products = [
     },
     {
         id: 3,
-        img: "./src/img/image 26 (2).png",
+        img: "./src/img/image26(2).png",
         title: "The Best Easy One Pot Chicken and Rice",
         price: 30,
         description: "snack",
