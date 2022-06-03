@@ -1,12 +1,13 @@
 import "../css/deiltal.css";
 import Render from "./render.js";
+import imgProductHome from './imgg'
 
 const idURl = new URLSearchParams(window.location.search).get("id");
 
 const products = [
     {
         id: 1,
-        img: "src/img/image 26.png",
+        img: imgProductHome[0],
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description:
@@ -14,7 +15,7 @@ const products = [
     },
     {
         id: 2,
-        img: "./src/img/Mask Group-3.png",
+        img: imgProductHome[1],
         title: "Fresh Lime Roasted Salmon",
         price: 30,
         description:
@@ -22,7 +23,7 @@ const products = [
     },
     {
         id: 3,
-        img: "./src/img/image 26 (2).png",
+        img: imgProductHome[2],
         title: "The Best Easy One Pot Chicken and Rice",
         price: 30,
         description:
@@ -30,7 +31,7 @@ const products = [
     },
     {
         id: 4,
-        img: "./src/img/image 26 (3).png",
+        img: imgProductHome[3],
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description:
@@ -38,7 +39,7 @@ const products = [
     },
     {
         id: 5,
-        img: "./src/img/image 26 (4).png",
+        img: imgProductHome[4],
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description:
@@ -46,7 +47,7 @@ const products = [
     },
     {
         id: 6,
-        img: "./src/img/image 26 (5).png",
+        img: imgProductHome[5],
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 40,
         description:
