@@ -1,6 +1,6 @@
 import "../css/deiltal.css";
 import Render from "./render.js";
-import imgProductHome from './imgg'
+import imgProductHome from './img'
 
 const idURl = new URLSearchParams(window.location.search).get("id");
 
