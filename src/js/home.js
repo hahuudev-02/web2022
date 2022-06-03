@@ -4,7 +4,7 @@ import Render from "./render";
 const products = [
     {
         id: 1,
-        img: "src/img/image 26.png",
+        img: ".src/img/image26.png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description: "snack",
@@ -25,7 +25,7 @@ const products = [
     },
     {
         id: 4,
-        img: "./src/img/image 26 (3).png",
+        img: "./src/img/image26(3).png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description: "snack",
