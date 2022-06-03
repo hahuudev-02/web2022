@@ -1,4 +1,5 @@
 import "../css/home.css";
+import Render from "./render";
 
 const products = [
     {
@@ -45,11 +46,16 @@ const products = [
     },
 ];
 
-const htmls = products.map((product) =>
-     `
+const htmls = products.map(
+    (product) =>
+        `
      <div class="column" key=${product.id}>
-        <img src="${product.img}" alt="" class="rounded-lg w-full">
-        <p class="text-primary my-4">${product.title}</p>
+        <a href="./deital.html?id=${product.id}" className="">
+            <img src="${product.img}" alt="" class="rounded-lg w-full">
+        </a>
+        <a href="./deital.html?id=${product.id}" className="">
+            <p class="text-primary my-4">${product.title}</p>
+        </a>
         <div class="flex items-center space-x-4 text-gray-600">
             <span class="">${product.price} Minutes</span>
             <span class="">${product.description}</span>
@@ -59,10 +65,10 @@ const htmls = products.map((product) =>
 );
 
 function render(elementId, htmls) {
-    const element = document.getElementById(elementId)
-    if(element) {
-        element.innerHTML = htmls
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.innerHTML = htmls;
     }
 }
 
-render('products', htmls.join(''))
+Render("products", htmls.join(""));
