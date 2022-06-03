@@ -7,7 +7,11 @@ console.log(img);
 const products = [
     {
         id: 1,
+<<<<<<< HEAD
         img: img,
+=======
+        img: "src/img/image26.png",
+>>>>>>> 3a0d15260ff8585e07f0cb7f3d1438530d158b01
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description: "snack",
