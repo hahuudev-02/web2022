@@ -4,49 +4,76 @@ import Render from "./render";
 const products = [
     {
         id: 1,
-        img: "https://picsum.photos/500/250",
+        img: "src/img/image 26.png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description: "snack",
     },
     {
         id: 2,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/Mask Group-3.png",
         title: "Fresh Lime Roasted Salmon",
         price: 30,
         description: "Fish",
     },
     {
         id: 3,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/image 26 (2).png",
         title: "The Best Easy One Pot Chicken and Rice",
         price: 30,
         description: "snack",
     },
     {
         id: 4,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/image 26 (3).png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description: "snack",
     },
     {
         id: 5,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/image 26 (4).png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description: "snack",
     },
     {
         id: 6,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/image 26 (5).png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 40,
         description: "snack",
     },
 ];
 
-const htmls = products.map(
+const categories = [
+    {
+        img: './src/img/Group 890.png',
+        name: "Breakfast"
+    },
+    {
+        img: './src/img/image 20.png',
+        name: "Breakfast"
+    },
+    {
+        img: './src/img/image 21.png',
+        name: "Breakfast"
+    },
+    {
+        img: './src/img/image 22.png',
+        name: "Breakfast"
+    },
+    {
+        img: './src/img/image 23.png',
+        name: "Breakfast"
+    },
+    {
+        img: './src/img/image 24 (1).png',
+        name: "Breakfast"
+    },
+]
+
+const htmlsProducts = products.map(
     (product) =>
         `
      <div class="column" key=${product.id}>
@@ -64,11 +91,12 @@ const htmls = products.map(
     `
 );
 
-function render(elementId, htmls) {
-    const element = document.getElementById(elementId);
-    if (element) {
-        element.innerHTML = htmls;
-    }
-}
+const htmlCategories = categories.map(category => `
+    <div class="column flex flex-col items-center">
+        <img src="${category.img}" alt="" class=" w-full">
+        <span class="mt-8">${category.name}</span>
+    </div>
+`)
 
-Render("products", htmls.join(""));
+Render("products", htmlsProducts.join(""));
+Render("categories", htmlCategories.join(""));

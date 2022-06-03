@@ -6,7 +6,7 @@ const idURl = new URLSearchParams(window.location.search).get("id");
 const products = [
     {
         id: 1,
-        img: "https://picsum.photos/500/250",
+        img: "src/img/image 26.png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
         description:
@@ -14,38 +14,43 @@ const products = [
     },
     {
         id: 2,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/Mask Group-3.png",
         title: "Fresh Lime Roasted Salmon",
         price: 30,
-        description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        description:
+            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
     },
     {
         id: 3,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/image 26 (2).png",
         title: "The Best Easy One Pot Chicken and Rice",
         price: 30,
-        description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        description:
+            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
     },
     {
         id: 4,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/image 26 (3).png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
-        description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        description:
+            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
     },
     {
         id: 5,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/image 26 (4).png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 30,
-        description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        description:
+            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
     },
     {
         id: 6,
-        img: "https://picsum.photos/500/250",
+        img: "./src/img/image 26 (5).png",
         title: "Big and Juicy Wagyu Beef Cheeseburger",
         price: 40,
-        description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        description:
+            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
     },
 ];
 
@@ -67,6 +72,6 @@ const htmls = `
     <div class="">
         <img src="${productDetails.img}" alt="" class="w-[616px] h-[616px] rounded-lg">
     </div>
-`
+`;
 
-Render("productDetails", htmls)
+Render("productDetails", htmls);
